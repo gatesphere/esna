@@ -31,6 +31,8 @@ def initialize_deck():
   global deck
   deck = []
   
+  #@+<< data reader code >>
+  #@+node:peckj.20140922102810.4221: *4* << data reader code >>
   def comment_stripper(iterator):
     for line in iterator:
       if line.startswith('#'):
@@ -38,13 +40,14 @@ def initialize_deck():
       if not line.strip():
         continue
       yield line
-  
+
   def read_data(data_file):
     ''' a generator function for reading csv files with # comments. '''
     with open(data_file, 'rb') as csv_data:
       reader = csv.reader(comment_stripper(csv_data))
       for row in reader:
         yield row
+  #@-<< data reader code >>
   
   for row in read_data('cards.dat'):
     c = create_card(row)
