@@ -25,9 +25,10 @@
 expanded="peckj.20140922102810.4100,"><vh>@file run.py</vh></v>
 <v t="peckj.20140922102810.4051" a="E"><vh>@path esna</vh>
 <v t="peckj.20140922102810.4052"><vh>@file __init__.py</vh></v>
-<v t="peckj.20140922102810.4053" a="E"
+<v t="peckj.20140922102810.4053"
 expanded="peckj.20140922102810.4058,"><vh>@file card.py</vh></v>
 </v>
+<v t="peckj.20140922102810.4219"><vh>@edit cards.dat</vh></v>
 </v>
 </vnodes>
 <tnodes>

@@ -1,0 +1,16 @@
+# ESNA cards
+# lines starting with # are comments
+
+# fields 1-15 are Level indexes
+# fields 16-30 are BS
+# fields 31-45 are Gold
+# field 46 is Terrain
+# field 47 is Dungeon
+# field 48 is Reference Letter
+# field 49 is hit location
+# field 50 is additional paths
+# fields 51-52 are monster type + loot
+# fields 53-54 are quest type + loot
+# fields 55-78 are terrain,terrain,event tuples
+
+4,10,None,3,None,1,5,None,2,8,None,9,6,7,None,0,15,27,9,14,2,14,20,9,10,29,29,8,24,17,T,31,52,17,27,2,28,39,2,21,55,55,16,49,35,Forest,False,J,head,0,Typical,0,Escort,2,Forest,Forest,+1,Forest,Desert,B,Mountain,Desert,H,Farm,Mountain,M,Forest,Farm,A,Mountain,Mountain,G,Farm,Farm,L,Desert,Desert,+1

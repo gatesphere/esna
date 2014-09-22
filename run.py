@@ -6,6 +6,9 @@
 
 #@+<< imports >>
 #@+node:peckj.20140922102810.4098: ** << imports >>
+import os
+import csv
+
 from esna.card import Card
 #@-<< imports >>
 #@+<< declarations >>
@@ -28,30 +31,58 @@ def initialize_deck():
   global deck
   deck = []
   
-  ## find a much better way of doing this
+  def comment_stripper(iterator):
+    for line in iterator:
+      if line.startswith('#'):
+        continue
+      if not line.strip():
+        continue
+      yield line
   
-  levels = [4,10,None,3,None,1,5,None,2,8,None,9,6,7,None]
-  bs = [0,15,27,9,14,2,14,20,9,10,29,29,8,24,17]
-  gold = ['T',31,52,17,27,2,28,39,2,21,55,55,16,49,35]
-  terrain = 'Forest'
-  dungeon = False
-  ref = 'J'
-  paths = 0
-  hit = 'head'
-  monster = ('Typical',0)
-  quest = ('Escort',2)
-  events = { ('Forest','Forest'):     '+1',
-             ('Forest','Desert'):     'B',
-             ('Mountain','Desert'):   'H',
-             ('Farm','Mountain'):     'M',
-             ('Forest','Farm'):       'A',
-             ('Mountain','Mountain'): 'G',
-             ('Farm','Farm'):         'L',
-             ('Desert','Desert'):     '+1' }
+  def read_data(data_file):
+    ''' a generator function for reading csv files with # comments. '''
+    with open(data_file, 'rb') as csv_data:
+      reader = csv.reader(comment_stripper(csv_data))
+      for row in reader:
+        yield row
   
-  c = Card(levels,bs,gold,terrain,dungeon,events,ref,paths,monster,quest,hit)
-  
-  deck.append(c)
+  for row in read_data('cards.dat'):
+    levels = []
+    for i in row[0:15]:
+      if i == 'None':
+        levels.append(None)
+      else:
+        levels.append(int(i))
+    
+    bs = [int(i) for i in row[15:30]]
+
+    gold = []
+    for i in row[30:45]:
+      if i == 'T':
+        gold.append('T')
+      else:
+        gold.append(int(i))
+
+    terrain = row[45]
+    dungeon = bool(row[46])
+    ref = row[47]
+    hit = row[48]
+    paths = int(row[49])
+
+    monster = (row[50], int(row[51]))
+    quest = (row[52], int(row[53]))
+
+    events = {}
+    i = 54
+    while i < 75:
+      k = (row[i],row[i+1])
+      v = row[i+2]
+      events[k]=v
+      i+=3
+    
+    c = Card(levels,bs,gold,terrain,dungeon,events,ref,paths,monster,quest,hit)
+    
+    deck.append(c)
   
 #@-others
 
