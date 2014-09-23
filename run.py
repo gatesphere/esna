@@ -7,52 +7,41 @@
 #@+<< imports >>
 #@+node:peckj.20140922102810.4098: ** << imports >>
 import os
-import csv
 
 from esna.card import Card
+from esna.datareader import read_data
+from esna.deck import Deck
 #@-<< imports >>
 #@+<< declarations >>
 #@+node:peckj.20140922102810.4099: ** << declarations >>
-deck = None
+card_data = 'cards.dat'
+
 #@-<< declarations >>
 
 #@+others
 #@+node:peckj.20140922102810.4100: ** main
 def main():
-  initialize_deck()
+  deck = initialize_deck()
   
-  print deck[0].getTerrain()
-  print deck[0].getMonsterType()
-  print deck[0].getQuestLoot()
-  print deck[0].getLevelIndex(1)
-  pass
+  deck.display()
+  
+  c = deck.draw_card()
+  
+  print c.getTerrain()
+  print c.getMonsterType()
+  print c.getQuestLoot()
+  print c.getLevelIndex(1)
+
+  deck.display()
 #@+node:peckj.20140922102810.4101: *3* initialize_deck
 def initialize_deck():
-  global deck
-  deck = []
+  cards = []
   
-  #@+<< data reader code >>
-  #@+node:peckj.20140922102810.4221: *4* << data reader code >>
-  def comment_stripper(iterator):
-    for line in iterator:
-      if line.startswith('#'):
-        continue
-      if not line.strip():
-        continue
-      yield line
-
-  def read_data(data_file):
-    ''' a generator function for reading csv files with # comments. '''
-    with open(data_file, 'rb') as csv_data:
-      reader = csv.reader(comment_stripper(csv_data))
-      for row in reader:
-        yield row
-  #@-<< data reader code >>
-  
-  for row in read_data('cards.dat'):
+  for row in read_data(card_data):
     c = create_card(row)
-    deck.append(c)
+    cards.append(c)
   
+  return Deck(cards)
 #@+node:peckj.20140922102810.4220: *4* create_card
 def create_card(row):
   levels = []
