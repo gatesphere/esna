@@ -25,12 +25,12 @@ def main():
   
   deck.display()
   
-  c = deck.draw_card()
-  
-  print c.getTerrain()
-  print c.getMonsterType()
-  print c.getQuestLoot()
-  print c.getLevelIndex(1)
+  #print deck.draw_kingdom()
+  #print deck.draw_events('Forest','Mountain')
+  #print deck.draw_loot_value(1)
+  #print deck.draw_battle_strength(2,1)
+  print deck.draw_treasure()
+  print deck.draw_monster()
 
   deck.display()
 #@+node:peckj.20140922102810.4101: *3* initialize_deck
@@ -61,7 +61,7 @@ def create_card(row):
       gold.append(int(i))
 
   terrain = row[45]
-  dungeon = bool(row[46])
+  dungeon = row[46] == 'True'
   ref = row[47]
   hit = row[48]
   paths = int(row[49])
