@@ -14,9 +14,7 @@ import csv
 #@+node:peckj.20140923100049.4065: ** comment_stripper
 def comment_stripper(iterator):
   for line in iterator:
-    if line.startswith('#'):
-      continue
-    if not line.strip():
+    if line.startswith('#') or not line.strip():
       continue
     yield line
 #@+node:peckj.20140923100049.4064: ** read_data
