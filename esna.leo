@@ -11,7 +11,7 @@
 <find_panel_settings/>
 <vnodes>
 <v t="peckj.20140922102810.4017"><vh>@settings</vh>
-<v t="peckj.20140922102810.4010" a="E"><vh>@persistence</vh>
+<v t="peckj.20140922102810.4010"><vh>@persistence</vh>
 <v t="peckj.20140922102810.4011" a="E"><vh>@data:@auto README.md</vh>
 <v t="peckj.20140922102810.4049"><vh>@gnxs</vh></v>
 </v>
@@ -21,14 +21,14 @@
 <v t="peckj.20140922102810.4008" a="E"><vh>@auto README.md</vh></v>
 </v>
 <v t="peckj.20140922102810.4050" a="E"><vh>Code</vh>
-<v t="peckj.20140922102810.4097" a="E"
+<v t="peckj.20140922102810.4097"
 expanded="peckj.20140922102810.4100,peckj.20140922102810.4101,"><vh>@file run.py</vh></v>
 <v t="peckj.20140922102810.4051" a="E"><vh>@path esna</vh>
 <v t="peckj.20140922102810.4052"><vh>@file __init__.py</vh></v>
-<v t="peckj.20140922102810.4053" a="E"
+<v t="peckj.20140922102810.4053"
 expanded="peckj.20140922102810.4056,peckj.20140922102810.4058,"><vh>@file card.py</vh></v>
 <v t="peckj.20140923100049.4061"><vh>@file datareader.py</vh></v>
-<v t="peckj.20140923100049.4066" a="E"
+<v t="peckj.20140923100049.4066"
 expanded="peckj.20140923100049.4069,peckj.20140924124512.4079,peckj.20140924124512.4080,"><vh>@file deck.py</vh></v>
 </v>
 </v>

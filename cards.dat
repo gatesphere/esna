@@ -1,18 +1,27 @@
 # ESNA cards
 # lines starting with # are comments
 
-# fields 1-15 are Level indexes
-# fields 16-30 are BS
-# fields 31-45 are Gold
-# field 46 is Terrain
-# field 47 is Dungeon
+# fields 1-15 are Level indexes (integers or None)
+# fields 16-30 are BS   (integers)
+# fields 31-45 are Gold (integers or T)
+# field 46 is Terrain (valid: Forest, Mountain, Desert, Farm)
+# field 47 is Dungeon (valid: True, False)
 # field 48 is Reference Letter
-# field 49 is hit location
-# field 50 is additional paths
+# field 49 is hit location (valid: head, left arm, right arm, torso, left leg, right leg)
+# field 50 is additional paths (integers)
 # fields 51-52 are monster type + loot
 # fields 53-54 are quest type + loot
 # fields 55-78 are terrain,terrain,event tuples
 
+# card 1
 4,10,None,3,None,1,5,None,2,8,None,9,6,7,None,0,15,27,9,14,2,14,20,0,10,29,29,8,24,17,T,31,52,17,27,2,28,39,2,21,55,55,16,49,35,Forest,False,J,head,0,Typical,0,Escort,2,Forest,Forest,+1,Forest,Desert,B,Mountain,Desert,H,Farm,Mountain,M,Forest,Farm,A,Mountain,Mountain,G,Farm,Farm,L,Desert,Desert,+1
 
+# card 2
 3,None,10,2,5,None,4,8,1,None,None,None,7,9,6,5,14,24,0,7,1,11,23,3,17,27,26,16,24,20,9,T,48,2,14,4,21,46,6,35,52,51,31,45,38,Mountain,True,C,left arm,1,Ferocious,3,Slay,5,Forest,Forest,C,Forest,Desert,D,Mountain,Farm,J,Farm,Desert,+1,Forest,Mountain,+1,Mountain,Mountain,I,Farm,Farm,N,Desert,Desert,Q
+
+# card 3
+2,9,None,1,3,None,None,4,None,6,8,None,5,10,7,15,33,23,0,11,1,12,19,2,20,30,17,16,13,10,31,66,T,3,21,3,24,38,3,39,58,35,31,24,20,Farm,False,K,right arm,2,Ferocious,2,Guard,3,Forest,Forest,E,Forest,Farm,+1,Mountain,Farm,K,Farm,Farm,+1,Forest,Mountain,F,Forest,Desert,R,Mountain,Desert,S,Farm,Desert,O
+
+# card 4
+1,9,7,None,4,None,2,6,None,3,10,8,None,None,5,5,35,27,12,7,0,6,15,5,11,27,19,2,44,6,10,70,52,T,14,3,13,31,9,24,51,38,6,86,14,Desert,False,L,torso,1,Burrowing,1,Defend,3,Forest,Forest,+2,Forest,Farm,L,Mountain,Mountain,H,Farm,Farm,+1,Forest,Mountain,G,Forest,Desert,T,Mountain,Desert,+1,Desert,Desert,Q
+
