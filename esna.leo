@@ -22,17 +22,19 @@
 </v>
 <v t="peckj.20140922102810.4050" a="E"><vh>Code</vh>
 <v t="peckj.20140922102810.4097" a="E"
-expanded="peckj.20140922102810.4100,peckj.20140922102810.4101,"><vh>@file run.py</vh></v>
-<v t="peckj.20140922102810.4051"><vh>@path esna</vh>
+expanded="peckj.20140922102810.4101,"><vh>@file run.py</vh></v>
+<v t="peckj.20140922102810.4051" a="E"><vh>@path esna</vh>
 <v t="peckj.20140922102810.4052"><vh>@file __init__.py</vh></v>
 <v t="peckj.20140922102810.4053"
 expanded="peckj.20140922102810.4056,peckj.20140922102810.4058,"><vh>@file card.py</vh></v>
 <v t="peckj.20140923100049.4061"><vh>@file datareader.py</vh></v>
 <v t="peckj.20140923100049.4066"
 expanded="peckj.20140923100049.4069,peckj.20140924124512.4079,peckj.20140924124512.4080,"><vh>@file deck.py</vh></v>
+<v t="peckj.20140926151523.4090" a="E"
+expanded="peckj.20140926151523.4093,"><vh>@file character.py</vh></v>
 </v>
 </v>
-<v t="peckj.20140924124512.4077" a="E"><vh>Data</vh>
+<v t="peckj.20140924124512.4077"><vh>Data</vh>
 <v t="peckj.20140922102810.4219"><vh>@edit cards.dat</vh></v>
 </v>
 </vnodes>
