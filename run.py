@@ -48,6 +48,7 @@ def create_card(row):
   terrain_types = ['Forest', 'Mountain', 'Farm', 'Desert']
   monster_types = ['Typical', 'Swarming', 'Flying', 'Ferocious', 'Burrowing', 'Poison', 'Armored', 'Undead']
   quest_types = ['Escort', 'Slay', 'Guard', 'Return', 'Defend', 'Negotiate', 'Assault']
+  hit_locations = ['torso', 'head', 'left arm', 'right arm', 'left leg', 'right leg']
   
   levels = []
   for i in row[0:15]:
@@ -72,6 +73,8 @@ def create_card(row):
   dungeon = row[46] == 'True'
   ref = row[47]
   hit = row[48]
+  if hit not in hit_locations:
+    raise Exception('Hit location %s not valid.' % hit)
   paths = int(row[49])
 
   monster = (row[50], int(row[51]))

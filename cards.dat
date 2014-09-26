@@ -34,3 +34,11 @@ None,8,9,None,1,None,3,5,None,4,6,7,2,10,None,11,40,14,6,19,0,16,13,10,19,12,31,
 # card 7
 3,7,5,None,6,1,None,10,None,None,9,None,4,8,2,13,25,14,10,10,4,13,11,1,21,31,11,18,42,15,28,49,27,21,29,6,T,20,4,42,62,21,34,83,31,Farm,True,M,left arm,3,Typical,4,Escort,5,Forest,Mountain,D,Forest,Desert,F,Mountain,Farm,+1,Farm,Farm,P,Forest,Farm,E,Mountain,Mountain,+1,Mountain,Desert,K,Farm,Desert,T
 
+# card 8
+None,7,5,2,None,None,4,None,1,None,10,8,6,9,3,15,33,26,13,18,0,4,20,6,10,12,11,15,38,20,31,63,51,27,35,2,7,T,10,20,23,24,28,73,37,Desert,True,E,right arm,2,Swarming,3,Assault,2,Forest,Forest,D,Forest,Farm,+2,Mountain,Farm,+1,Farm,Desert,L,Forest,Mountain,A,Mountain,Mountain,+1,Mountain,Desert,G,Desert,Desert,T
+
+# card 9
+4,9,8,1,5,None,3,None,2,7,None,None,None,10,6,5,30,20,6,4,2,4,10,1,23,20,34,10,26,21,9,58,37,13,7,4,10,20,T,45,37,65,20,52,41,Forest,False,R,left leg,1,Flying,2,Defend,1,Forest,Forest,F,Forest,Farm,+1,Mountain,Mountain,K,Mountain,Desert,Q,Forest,Mountain,+2,Forest,Desert,B,Mountain,Farm,M,Farm,Farm,+1
+
+# card 10
+1,8,6,9,4,None,2,3,None,5,7,10,None,None,None,11,20,18,3,16,2,2,9,1,15,33,33,17,14,13,21,41,34,6,31,2,3,16,3,T,67,63,31,28,27,Mountain,False,N,torso,2,Typical,1,Guard,4,Forest,Forest,E,Forest,Desert,C,Mountain,Farm,H,Farm,Desert,+1,Forest,Mountain,+1,Mountain,Mountain,+2,Farm,Farm,N,Desert,Desert,R
