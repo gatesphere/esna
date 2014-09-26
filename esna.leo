@@ -21,9 +21,9 @@
 <v t="peckj.20140922102810.4008" a="E"><vh>@auto README.md</vh></v>
 </v>
 <v t="peckj.20140922102810.4050" a="E"><vh>Code</vh>
-<v t="peckj.20140922102810.4097"
+<v t="peckj.20140922102810.4097" a="E"
 expanded="peckj.20140922102810.4100,peckj.20140922102810.4101,"><vh>@file run.py</vh></v>
-<v t="peckj.20140922102810.4051" a="E"><vh>@path esna</vh>
+<v t="peckj.20140922102810.4051"><vh>@path esna</vh>
 <v t="peckj.20140922102810.4052"><vh>@file __init__.py</vh></v>
 <v t="peckj.20140922102810.4053"
 expanded="peckj.20140922102810.4056,peckj.20140922102810.4058,"><vh>@file card.py</vh></v>

@@ -25,3 +25,12 @@
 # card 4
 1,9,7,None,4,None,2,6,None,3,10,8,None,None,5,5,35,27,12,7,0,6,15,5,11,27,19,2,44,6,10,70,52,T,14,3,13,31,9,24,51,38,6,86,14,Desert,False,L,torso,1,Burrowing,1,Defend,3,Forest,Forest,+2,Forest,Farm,L,Mountain,Mountain,H,Farm,Farm,+1,Forest,Mountain,G,Forest,Desert,T,Mountain,Desert,+1,Desert,Desert,Q
 
+# card 5
+None,10,6,4,2,None,1,None,None,5,7,9,3,8,None,3,13,22,9,1,1,10,17,6,21,23,9,11,39,8,6,28,41,17,T,4,20,35,13,42,44,18,20,77,16,Forest,True,D,right leg,1,Poison,0,Slay,3,Forest,Forest,A,Mountain,Mountain,+1,Mountain,Desert,I,Farm,Desert,M,Forest,Farm,B,Mountain,Farm,+1,Farm,Farm,P,Desert,Desert,R
+
+# card 6
+None,8,9,None,1,None,3,5,None,4,6,7,2,10,None,11,40,14,6,19,0,16,13,10,19,12,31,11,40,17,21,76,27,10,38,T,31,25,21,37,23,59,25,81,35,Mountain,False,Q,head,0,Flying,3,Negotiate,6,Forest,Forest,+1,Forest,Farm,C,Mountain,Farm,N,Farm,Desert,O,Forest,Mountain,+2,Forest,Desert,+1,Mountain,Desert,J,Desert,Desert,S
+
+# card 7
+3,7,5,None,6,1,None,10,None,None,9,None,4,8,2,13,25,14,10,10,4,13,11,1,21,31,11,18,42,15,28,49,27,21,29,6,T,20,4,42,62,21,34,83,31,Farm,True,M,left arm,3,Typical,4,Escort,5,Forest,Mountain,D,Forest,Desert,F,Mountain,Farm,+1,Farm,Farm,P,Forest,Farm,E,Mountain,Mountain,+1,Mountain,Desert,K,Farm,Desert,T
+
